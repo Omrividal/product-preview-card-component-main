@@ -1,0 +1,151 @@
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+/* Variables */
+:root{
+--primary-color: hsl(158, 36%, 37%);
+--secondary-color: hsl(30, 38%, 92%);
+--dark-color: hsl(212, 21%, 14%);
+--dark-blue: hsl(228, 12%, 48%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: var(--secondary-color);
+  min-height: 100vh;
+}
+
+/* Paragraph must be 14px */
+
+
+/* Card */
+
+.card {
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  background-color:#fff;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+/* Image inside the card item1 */
+
+.item-1 {
+  background: url('../images/image-product-desktop.jpg') no-repeat center center/cover;
+  flex: 50%;
+  width: 100%;
+  height: inherit;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* Item 2 - right side */
+
+.item-2 {
+  padding: 30px;
+  flex: 50%;
+}
+
+h2,
+p,
+.prev-price {
+  color: var(--dark-blue);
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.heading {
+  font-size: 35px;
+  padding: 1rem 0.5rem;
+  line-height: 2.3rem;
+}
+
+.heading,
+.current-price {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.3rem;
+}
+
+/* Prices container */
+
+.prices-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1.2rem 0;
+}
+
+.current-price {
+  font-size: 35px;
+  color: var(--primary-color);
+}
+
+.prev-price {
+  padding: 0.8rem;
+  text-decoration: line-through;
+}
+
+.btn {
+  display: flex;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.9rem;
+  margin-top: 10px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: var(--dark-color);
+  cursor: pointer;
+}
+
+
+.cart-text {
+  padding-left: 6px;
+  
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  height: 20px;
+  bottom:0;
+  left: 0;
+  text-align: center;
+  color: var(--dark-blue);
+}
+
+footer a {
+  text-decoration: none;
+}

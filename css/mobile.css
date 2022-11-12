@@ -1,0 +1,21 @@
+
+.card {
+  display: grid;
+  grid-template-rows: 1.1fr 2fr ;
+  width: 100%;
+  max-width: 360px;
+  background-color:#fff;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.item-1 {
+  background: url('../images/image-product-mobile.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: inherit;
+  border-radius: 10px 10px 0 0;
+}
+
+.prev-price {
+  padding: 1rem 1rem 1rem 0;
+}
